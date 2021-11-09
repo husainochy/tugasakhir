@@ -23,12 +23,14 @@ $query = mysqli_query($conn, $sql);
 
   <body>
     
-    <div id="profile">
+    <!-- <div id="profile"> -->
 
-      <div class="container">
+      <div class="container" style="width: 100%;">
 
         <div class="row d-flex justify-content-center">
         <li><a href="inputdata.php"><span class="ico-account"></span>Tambah Data</a></li>
+        <div class="table-responsive">
+          
 <table class="table">
     <thead>
         <tr>
@@ -37,6 +39,7 @@ $query = mysqli_query($conn, $sql);
             <th>Jenis</th>
             <th>Harga</th>
             <th>Deskripsi</th>
+            <th>Gambar</th>
         </tr>
     </thead>
     <tbody>
@@ -50,17 +53,22 @@ while($isi = mysqli_fetch_object($query)){
             <td><?=$isi->nm_jenisproduk;?></td>
             <td><?=$isi->harga?></td>
             <td><?=$isi->deskripsi?></td>
+            <td> 
+              <img src="<?= "file/". $isi->poto ?>" class="img-fluid" style="width: 100px;"/>            
+            </td>
         </tr>
         <?php } ?>
     </tbody>
 </table>
+</div>
+
           </div>
 
         </div>
       
       </div>
 
-    </div>
+    <!-- </div> -->
 
   </body>
 </html>

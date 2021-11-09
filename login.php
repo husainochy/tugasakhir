@@ -7,7 +7,7 @@ error_reporting(0);
 session_start();
  
 if (isset($_SESSION['username'])) {
-    header("Location: inputdata.php");
+    header("Location: semuadata.php");
 }
  
 if (isset($_POST['submit'])) {

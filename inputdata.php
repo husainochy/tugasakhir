@@ -21,8 +21,9 @@ $q2 = mysqli_query($conn, $jenis);
       <div class="container">
         <div class="row d-flex justify-content-center">
           <div class="col col-8 p-4 bg-light">
-            <form action="action.php" method="POST">
-              <div class="form-group mb-2">
+            <form action="action.php" method="POST" enctype="multipart/form-data">
+            <div class="form-group mb-2">
+
 			  </div>
 			  <label for="name"><h3>Input Data Mutiara Lombok</h3></label>
 

@@ -29,6 +29,8 @@ $query = mysqli_query($conn, $sql);
 
         <div class="row d-flex justify-content-center">
         <li><a href="inputdata.php"><span class="ico-account"></span>Tambah Data</a></li>
+        <a href="inputdata.php" class="btn">Tambah Data</a>
+        <a href="logout.php" class="btn">Logout</a>
         <div class="table-responsive">
           
 <table class="table">
@@ -54,7 +56,7 @@ while($isi = mysqli_fetch_object($query)){
             <td><?=$isi->harga?></td>
             <td><?=$isi->deskripsi?></td>
             <td> 
-              <img src="<?= "file/". $isi->poto ?>" class="img-fluid" style="width: 100px;"/>            
+            <img src="<?= "file/". $isi->poto ?>" class="img-fluid" style="width: 100px;"/>            
             </td>
         </tr>
         <?php } ?>

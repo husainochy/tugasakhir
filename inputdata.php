@@ -62,9 +62,9 @@ $q2 = mysqli_query($conn, $jenis);
 				</div>
 				
         Pilih Gambar Perhiasan: <input type="file" name="berkas" />
-        <input type="submit" name="upload" value="upload" />
+        
 
-              <input name="submit" type="submit" value="Kirim" class="btn btn-primary">
+        <input name="submit" type="submit" value="Kirim" class="btn btn-primary">
 			  <a href="logout.php" class="btn">Logout</a>
             
 			</form>

@@ -29,8 +29,8 @@ $query = mysqli_query($conn, $sql);
 
         <div class="row d-flex justify-content-center">
         <li><a href="inputdata.php"><span class="ico-account"></span>Tambah Data</a></li>
-        <a href="inputdata.php" class="btn">Tambah Data</a>
-        <a href="logout.php" class="btn">Logout</a>
+        <a href="inputdata.php" class="btn"><h2>Tambah Data</h2></a>
+        <a href="logout.php" class="btn"><h2>Logout</h2></a>
         <div class="table-responsive">
           
 <table class="table">
@@ -42,6 +42,7 @@ $query = mysqli_query($conn, $sql);
             <th>Harga</th>
             <th>Deskripsi</th>
             <th>Gambar</th>
+            <th>Aksi</th>
         </tr>
     </thead>
     <tbody>
@@ -58,7 +59,9 @@ while($isi = mysqli_fetch_object($query)){
             <td> 
             <img src="<?= "file/". $isi->poto ?>" class="img-fluid" style="width: 100px;"/>            
             </td>
-        </tr>
+            <td><a href="form_edit.php?id_produk=' . $produk["id_produk"] . '">Edit</a></td>
+			      <td><a href="delete.php?id_produk=' .$produk["id_produk"] .'" onclick="return confirm_delete()">Delete</a></td>
+          </tr>
         <?php } ?>
     </tbody>
 </table>

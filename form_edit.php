@@ -19,11 +19,8 @@ foreach( $result as $produk){
     <td><?=$isi->nm_jenisproduk;?></td>
     <td><?=$isi->harga?></td>
     <td><?=$isi->deskripsi?></td>
-    <td> 
-    <img src="<?= "file/". $isi->poto ?>" class="img-fluid" style="width: 100px;"/>            
-    </td>
-
-       
+    <td><img src="<?= "file/". $isi->poto ?>" class="img-fluid" style="width: 100px;"/></td>
+      
 }
 
 ?>
@@ -61,7 +58,7 @@ foreach( $result as $produk){
                         <?php if(!is_null($foto) && !empty($foto)) :?>
                         <div class="form-group mb-2">
                             <img src="<?=$foto?>" class="preview">
-                            <a href="hapus_foto.php?id_produk=<?=$id_produk?>">Hapus Foto</a>
+                            <a href="hapus_foto.php?id_produk=<?=$id_produk?>">Hapus Data</a>
                         </div>
                         <?php endif; ?>
 

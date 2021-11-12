@@ -1,10 +1,10 @@
 <?php
-require_once("connection.php");
+require_once("config.php");
 
 //Mendapatkan data ID Barang
 if( isset($_POST["id_barang"])) $id_barang = $_POST["id_barang"];
 else{
-    echo "ID Barang tidak ditemukan! <a href='index.php'>Kembali</a>";
+    echo "ID Barang tidak ditemukan! <a href='index.html'>Kembali</a>";
     exit();
 }
 
@@ -15,17 +15,14 @@ $query = "SELECT * FROM barang WHERE id_barang = '{$id_barang}'";
 $result = mysqli_query($mysqli, $query);
 
 //Fetching Data
-foreach( $result as $barang){
-    $foto = $barang["foto"];
-    $id_barang = $barang["id_barang"];
-    $nama_barang = $barang["nama_barang"];
-    $harga = $barang["harga"];
+foreach($result as $produk){
+    <td><?=$no++;?></td>
+    <td><?=$isi->nm_categori;?></td>
+    <td><?=$isi->nm_jenisproduk;?></td>
+    <td><?=$isi->harga?></td>
+    <td><?=$isi->deskripsi?></td>
+    <td><img src="<?= "file/". $isi->poto ?>/></td>
 
-    if( isset($_POST['id_barang'])) $id_barang = $_POST['id_barang'];
-
-    if( isset($_POST['nama_barang'])) $nama_barang = $_POST['nama_barang'];
-
-    if( isset($_POST['harga'])) $harga = $_POST['harga'];
 
     //Mengambil data file upload
     $files = $_FILES['foto'];
@@ -52,20 +49,20 @@ foreach( $result as $barang){
 
     //Menyiapkan Query MySQL untuk diekssekusi
     $query ="UPDATE barang SET
-    id_barang ='{$id_barang}',
-    nama_barang ='{$nama_barang}',
+    nm_categori ='{$nama_categori}',
+    nm_jenisproduk ='{$nm_jenisproduk}',
     harga ='{$harga}',
     foto = '{$filepath}'
-    WHERE id_barang = '{$id_barang}'";
+    WHERE id_barang = '{$id_produk}'";
 
     //Mengeksekusi MySQL Query
     $update = mysqli_query($mysqli, $query);
 
     //Menangani Ketika error pada saat eksekusi query
     if( $update == false){
-        echo "Error dalam mengubah data. <a href='index.php'>Kembali</a>";
+        echo "Error dalam mengubah data. <a href='index.html'>Kembali</a>";
     } else{
-        header("Location: index.php");
+        header("Location: index.html");
     }
 }
 

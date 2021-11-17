@@ -57,7 +57,7 @@ if (isset($_POST['submit'])) {
                 <button name="submit" class="btn">Login</button>
             </div>
             <p class="login-register-text">Anda belum punya akun? <a href="register.php">Register</a></p>
-            <li><a href="index.html"><span class="ico-account"></span>Kembali</a></li>
+            <li><a href="index.php"><span class="ico-account"></span>Kembali</a></li>
         </form>
     </div>
 </body>

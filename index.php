@@ -84,7 +84,7 @@ $query = mysqli_query($conn, $sql);
 	<div id="body">
 		<div class="container">
 			<div class="last-products">
-				<h2>Last added products</h2>
+				<h2>Produk Fitri Mutiara Lombok</h2>
 				<section class="products">
 				<?php
         $no = 1;
@@ -100,20 +100,6 @@ while($isi = mysqli_fetch_object($query)){
           
         <?php } ?>
 				
-				
-				<article style="background-image: url(images/4.jpg)">
-					<a href="#" class="table">
-						<div class="cell">
-							<div class="text">
-								<h4>culpa qui officia</h4>
-								<hr>
-								<h3>magnam aliquam</h3>
-							</div>
-						</div>
-					</a>
-				</article>
-			</section>
-		</div>
 		<!-- / container -->
 	</div>
 	<!-- / body -->

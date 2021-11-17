@@ -1,3 +1,13 @@
+<?php
+require "config.php";
+$sql = "SELECT produk.*,categori.nm_categori, jenis_produk.nm_jenisproduk from produk, categori,jenis_produk WHERE produk.id_categori=categori.id_categori 
+        and 
+        produk.id_jenisproduk=jenis_produk.id_jenisproduk 
+        and jenis_produk.nm_jenisproduk 
+        like '%kalung%'
+		";
+$query = mysqli_query($conn, $sql);
+?>
 <!DOCTYPE html>
 <!--[if IE 8]> <html class="ie8 oldie" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
@@ -11,19 +21,29 @@
 	<![endif]-->
 </head>
 <body>
+
 	<header id="header">
 		<div class="container">
-			<a href="index.php" id="logo" title="Mutiara Lombok">Mutiara Lombok</a>
+			<a href="index.html" id="logo" title="Mutiara Lombok">Mutiara Lombok</a>
 			<div class="right-links">
 				<ul>
-					<li><a href="cart.html"><span class="ico-products"></span>3 products, Rp.450.000</a></li>
+					<p>Time: <span id="tanggalwaktu"></span></p>
+					<script>
+					var dt = new Date();
+					document.getElementById("tanggalwaktu").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+ (("0"+dt.getDate()).slice(-2)) +"/"+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()+1).slice(-2)) +":"+ (("0"+dt.getMinutes()+1).slice(-2));
+					</script>
+				</ul>
+
+				<ul>
 					<li><a href="login.php"><span class="ico-account"></span>Login</a></li>
 				</ul>
+
 			</div>
 		</div>
 		<!-- / container -->
 	</header>
 	<!-- / header -->
+
 	<nav id="menu">
 		<div class="container">
 			<div class="trigger"></div>
@@ -31,7 +51,7 @@
 				<li><a href="index.php">Home</a></li>
 				<li><a href="products.html">Koleksi Terbaru</a></li>
 				<li><a href="products.html">Kategori Produk</a></li>
-				<li><a href="products.html">Jenis Produk</a></li>
+				<li><a href="products.html">Jenis Produk</a></li>	
 				<li><a href="contact.html">Kontak</a></li>
 			</ul>
 		</div>
@@ -39,58 +59,28 @@
 	</nav>
 	<!-- / navigation -->
 
-	<div id="breadcrumbs">
-		<div class="container">
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li>Product page</li>
-			</ul>
-		</div>
-		<!-- / container -->
-	</div>
 	<!-- / body -->
 
 	<div id="body">
 		<div class="container">
-			<div id="content" class="full">
-				<div class="product">
-					<div class="image">
-						<img src="images/5.jpg" alt="">
-					</div>
-					<div class="details">
-						<h1>Lorem ipsum dolor</h1>
-						<h4>Rp.90.000</h4>
-						<div class="entry">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-							<div class="tabs">
-								<div class="nav">
-									<ul>
-										<li class="active"><a href="#desc">Description</a></li>
-										<li><a href="#spec">Specification</a></li>
-										<li><a href="#ret">Returns</a></li>
-									</ul>
-								</div>
-								<div class="tab-content active" id="desc">
-									<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-								</div>
-								<div class="tab-content" id="spec">
-									<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-								</div>
-								<div class="tab-content" id="ret">
-									<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-								</div>
-							</div>
-						</div>
-						<div class="actions">
-							<label>Quantity:</label>
-							<select><option>1</option></select>
-							<a href="#" class="btn-grey">Add to cart</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- / content -->
-		</div>
+			<div class="last-products">
+				<h1>Mutiara Air Tawar</h>
+				<section class="products">
+				<?php
+        $no = 1;
+while($isi = mysqli_fetch_object($query)){
+        ?>
+        <article>
+			<img src="<?= "file/". $isi->poto ?>" alt="">
+			<h3><?=$isi->nm_categori;?></h3>
+			<h4><?=$isi->deskripsi?></h4>
+			<h5><?=$isi->harga?></h5>
+			<a href="cart.html" class="btn-add">Add to cart</a>
+			</article>
+          
+        <?php } ?>
+				
+				
 		<!-- / container -->
 	</div>
 	<!-- / body -->

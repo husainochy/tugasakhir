@@ -7,6 +7,7 @@ $sql = "select produk.*, categori.nm_categori, jenis_produk.nm_jenisproduk
         and
         produk.id_jenisproduk=jenis_produk.id_jenisproduk
         ";
+        
 $query = mysqli_query($conn, $sql);
 ?>
 <html>
@@ -59,8 +60,8 @@ while($isi = mysqli_fetch_object($query)){
             <td> 
             <img src="<?= "file/". $isi->poto ?>" class="img-fluid" style="width: 100px;"/>            
             </td>
-            <td><a href="form_edit.php?id_produk=' . $produk["id_produk"] . '">Edit</a></td>
-			      <td><a href="delete.php?id_produk=' .$produk["id_produk"] .'" onclick="return confirm_delete()">Delete</a></td>
+            <td><a href="#"><button type="button" class="btn btn-info">Edit</button></a></td>
+            <td><a href="delete.php?id_produk=<?= $isi->id_produk?>"><button type="button" class="btn btn-danger" name="delete">Delete</button></a></td>
           </tr>
         <?php } ?>
     </tbody>

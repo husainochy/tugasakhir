@@ -1,4 +1,4 @@
 <?php 
-mysql_connect("localhost","root","");
-mysql_select_db("mutiara_lombok");
+mysqli_connect("localhost","root","");
+select_db("mutiara_lombok");
 ?>

@@ -17,7 +17,7 @@ $result = mysqli_query($mysqli, $query);
 
 //Fetching Data
 foreach( $result as $barang){
-    <td><?=$no++;?></td>
+    <td><? $no++;?></td>
     <td><?=$isi->nm_categori;?></td>
     <td><?=$isi->nm_jenisproduk;?></td>
     <td><?=$isi->harga?></td>

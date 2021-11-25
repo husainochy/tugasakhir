@@ -1522,7 +1522,7 @@ h1 {
 	}
 
 	.quick-links {
-		margin: 0;
+		margin: -1;
 	}
 
 	#header .right-links span {

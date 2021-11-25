@@ -7,7 +7,7 @@ error_reporting(0);
 session_start();
  
 if (isset($_SESSION['username'])) {
-    header("Location: semuadata.php");
+    header("Location: admin/index.php");
 }
  
 if (isset($_POST['submit'])) {
@@ -19,7 +19,7 @@ if (isset($_POST['submit'])) {
     if ($result->num_rows > 0) {
         $row = mysqli_fetch_assoc($result);
         $_SESSION['username'] = $row['username'];
-        header("Location: semuadata.php");
+        header("Location: admin/index.php");
     } else {
         echo "<script>alert('Email atau password Anda salah. Silahkan coba lagi!')</script>";
     }
@@ -36,6 +36,11 @@ if (isset($_POST['submit'])) {
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
  
     <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            background-image: url('image/image.jpeg');
+        }
+    </style> 
  
     <title>Halaman Login</title>
 </head>
@@ -57,7 +62,6 @@ if (isset($_POST['submit'])) {
                 <button name="submit" class="btn">Login</button>
             </div>
             <p class="login-register-text">Anda belum punya akun? <a href="register.php">Register</a></p>
-            <li><a href="index.php"><span class="ico-account"></span>Kembali</a></li>
         </form>
     </div>
 </body>

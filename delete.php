@@ -13,7 +13,7 @@ try {
     if($del)
 {
     mysqli_close($conn); 
-    header("location: semuadata.php"); 
+    header("location: admin/pages/tables/basic-table.php"); 
     exit;	
 }
 else

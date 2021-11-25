@@ -55,6 +55,11 @@ $q2 = mysqli_query($conn, $jenis);
 					<label for="harga">Harga</label>
 					<input name="harga" type="text" id="harga" class="form-control" placeholder="Harga" required>
 				</div>
+
+        <div class="form-group mb-2">
+					<label for="stok">stok</label>
+					<input name="stok" type="text" id="stok" class="form-control" placeholder="stok" required>
+				</div>
 			                
 				<div class="form-group mb-2">
 					<label for="deskripsi">Deskripsi</label>

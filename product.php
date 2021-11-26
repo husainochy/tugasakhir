@@ -133,12 +133,7 @@ WHERE produk.id_categori = $id_categori ");
 							<label>Used</label>
 						</fieldset>
 					</div>
-					<div class="widget">
-						<h3>Price range:</h3>
-						<fieldset>
-							<div id="price-range"></div>
-						</fieldset>
-					</div>
+
 				</aside>
 				<div id="content">
 					<section class="products">
@@ -175,20 +170,21 @@ WHERE produk.id_categori = $id_categori ");
 		<!-- / container -->
 	</div>
 	<!-- / body -->
-
 	<footer id="footer">
 		<div class="container">
 			<div class="cols">
-					
+
+	
 					<h3>Contact us</h3>
 					<p>Fitri Mutiara Lombok<br>Kode Pos 83112, Jl. Tanggul Lingkungan Sukaraja Timur No.22, Central Ampenan, Ampenan, Mataram City, West Nusa Tenggara<br>Indonesia</p>
 					<p><span class="ico ico-em"></span><a href="#">pi2t_ris@yahoo.com</a></p>
 					<p><span class="ico ico-ph"></span>0812-3614-3339</p>
+		
 				
-
 			</div>
-			<p class="copy">Copyright 2021 Jongkoding. All rights reserved.</p>
+			<p class="copy">Copyright 2021 Jong Koding. All rights reserved.</p>
 		</div>
+
 		<!-- / container -->
 	</footer>
 	<!-- / footer -->

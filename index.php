@@ -28,7 +28,7 @@ $query = mysqli_query($conn, $sql);
 
 	<header id="header">
 		<div class="container">
-			<a href="index.php" id="logo" title="Diana’s jewelry">Diana’s jewelry</a>
+			<a href="index.php" id="logo" title="Diana’s jewelry">Fitri Mutiara Lombok</a>
 			<div class="right-links">
 				<ul>
 					<li><a href="login.php"><span class="ico-account"></span>Login</a></li>
@@ -45,7 +45,7 @@ $query = mysqli_query($conn, $sql);
 			<div class="trigger"></div>
 			<ul>
                 <li><a href="index.php">Home</a></li>
-				<li><a href="#">Koleksi Terbaru</a></li>
+				<li><a href="tentang.php">Tentang Mutiara</a></li>
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						Kategori Produk
@@ -81,25 +81,6 @@ $query = mysqli_query($conn, $sql);
 		</div>
 		<!-- / container -->
 	</nav>
-	<!-- / navigation -->
-
-	<div id="slider" style="width: 100%; height: 100%;">
-		<ul>
-			<li style="background-image: url(images/0.jpg)">
-				<h3>Make your life better</h3>
-				<h2>Genuine diamonds</h2>
-			</li>
-			<li class="purple" style="background-image: url(images/01.jpg)">
-				<h3>She will say “yes”</h3>
-				<h2>engagement ring</h2>
-			</li>
-			<li class="yellow" style="background-image: url(images/02.jpg)">
-				<h3>You deserve to be beauty</h3>
-				<h2>golden bracelets</h2>
-			</li>
-		</ul>
-	</div>
-	<!-- / body -->
 
 	<div id="body">
 		<div class="container">
@@ -126,29 +107,22 @@ $query = mysqli_query($conn, $sql);
 		</div>
 		<!-- / container -->
 	</div>
+	<!-- / navigation -->
+
+	<!-- / body -->
+
 	<!-- / body -->
 
 	<footer id="footer">
 		<div class="container">
 			<div class="cols">
-				<div class="col">
-					
-				</div>
-				<div class="col media">
-					<h3>Social media</h3>
-					<ul class="social">
-						<li><a href="#"><span class="ico ico-fb"></span>Facebook</a></li>
-						<li><a href="#"><span class="ico ico-tw"></span>Twitter</a></li>
-						<li><a href="#"><span class="ico ico-gp"></span>Google+</a></li>
-						<li><a href="#"><span class="ico ico-pi"></span>Pinterest</a></li>
-					</ul>
-				</div>
-				<div class="col contact">
+
+	
 					<h3>Contact us</h3>
 					<p>Fitri Mutiara Lombok<br>Kode Pos 83112, Jl. Tanggul Lingkungan Sukaraja Timur No.22, Central Ampenan, Ampenan, Mataram City, West Nusa Tenggara<br>Indonesia</p>
 					<p><span class="ico ico-em"></span><a href="#">pi2t_ris@yahoo.com</a></p>
 					<p><span class="ico ico-ph"></span>0812-3614-3339</p>
-				</div>
+		
 				
 			</div>
 			<p class="copy">Copyright 2021 Jong Koding. All rights reserved.</p>

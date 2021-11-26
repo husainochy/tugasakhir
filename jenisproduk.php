@@ -38,7 +38,7 @@ WHERE produk.id_jenisproduk = $id ");
 			<div class="trigger"></div>
 			<ul>
 				<li><a href="index.php">Home</a></li>
-				<li><a href="products.html">Koleksi Terbaru</a></li>
+				<li><a href="tentang.php">Tentang Mutiara</a></li>
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						Kategori Produk

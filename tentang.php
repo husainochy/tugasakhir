@@ -88,17 +88,14 @@ $query = mysqli_query($conn, $sql);
 	<!-- / body -->
     <div id="slider" style="width: 100%; height: 100%;">
 		<ul>
-			<li style="background-image: url(images/0.jpg)">
-				<h3>Make your life better</h3>
-				<h2>Genuine diamonds</h2>
+			<li style="background-image: url(images/Ciri-Mutiara-Asli-3.jpg)">
+
 			</li>
-			<li class="purple" style="background-image: url(images/01.jpg)">
-				<h3>She will say “yes”</h3>
-				<h2>engagement ring</h2>
+			<li class="purple" style="background-image: url(images/Ciri-Mutiara-Asli-3.jpg)">
+
 			</li>
-			<li class="yellow" style="background-image: url(images/02.jpg)">
-				<h3>You deserve to be beauty</h3>
-				<h2>golden bracelets</h2>
+			<li class="yellow" style="background-image: url(images/beda-airlau&airtawar.jpg)">
+
 			</li>
 		</ul>
 	</div>

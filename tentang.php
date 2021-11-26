@@ -88,7 +88,7 @@ $query = mysqli_query($conn, $sql);
 	<!-- / body -->
     <div id="slider" style="width: 100%; height: 100%;">
 		<ul>
-			<li style="background-image: url(images/Ciri-Mutiara-Asli-3.jpg)">
+			<li style="background-image: url(images/TentangFitriMutiara2.jpg)">
 
 			</li>
 			<li class="purple" style="background-image: url(images/Ciri-Mutiara-Asli-3.jpg)">

@@ -88,7 +88,7 @@ $query = mysqli_query($conn, $sql);
 		<label for=""><h1>Alamat Lengkap Fitri Mutiara Lombok</h1></label>
 		<li>
 			<!-- google maps -->
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.2359005769135!2d116.078273714175!3d-8.573301989354064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcdc1090ec54f4f%3A0x3d2be50688e9930!2sFitri%20Mutiara%20Lombok!5e0!3m2!1sen!2sid!4v1635937455221!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.2359005769135!2d116.078273714175!3d-8.573301989354064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcdc1090ec54f4f%3A0x3d2be50688e9930!2sFitri%20Mutiara%20Lombok!5e0!3m2!1sen!2sid!4v1635937455221!5m2!1sen!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 		</li>
 		</ul>
 	</div>

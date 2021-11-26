@@ -123,7 +123,7 @@ if (!isset($_SESSION['username'])) {
             <li class="nav-item">
               <a class="nav-link" href="../register.php">
                 <span class="menu-title">Add User</span>
-                <i class="mdi mdi-table-large menu-icon"></i>
+                <i class="mdi mdi-account-plus menu-icon"></i>
               </a>
             </li>
             <li class="nav-item">

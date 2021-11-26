@@ -121,6 +121,12 @@ if (!isset($_SESSION['username'])) {
               </a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="../register.php">
+                <span class="menu-title">Add User</span>
+                <i class="mdi mdi-table-large menu-icon"></i>
+              </a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="pages/forms/basic_elements.php">
                 <span class="menu-title">Add Data</span>
                 <i class="mdi mdi-format-list-bulleted menu-icon"></i>

@@ -41,8 +41,7 @@ $jenis = mysqli_query($conn, "SELECT * FROM jenis_produk");
       <!-- partial:../../partials/_navbar.php -->
       <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
         <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-          <a class="navbar-brand brand-logo" href="../../index.php"><img src="../../assets/images/logo.svg" alt="logo" /></a>
-          <a class="navbar-brand brand-logo-mini" href="../../index.php"><img src="../../assets/images/logo-mini.svg" alt="logo" /></a>
+          
         </div>
         <div class="navbar-menu-wrapper d-flex align-items-stretch">
           <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
@@ -128,7 +127,7 @@ $jenis = mysqli_query($conn, "SELECT * FROM jenis_produk");
                 <div class="border-bottom">
                   <h6 class="font-weight-normal mb-3">Action</h6>
                 </div>
-                <button class="btn btn-block btn-lg btn-gradient-primary mt-4">Logout</button>
+                <a href="../../../logout.php"><button class="btn btn-block btn-lg btn-gradient-primary mt-4">Logout</button></a>
               </span>
             </li>
           </ul>

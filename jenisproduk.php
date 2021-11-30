@@ -69,7 +69,7 @@ WHERE produk.id_jenisproduk = $id ");
 						?>
 					</div>
 				</li>	
-				<li><a href="contact.html">Kontak</a></li>
+				<li><a href="contact.php">Kontak</a></li>
 			</ul>
 		</div>
 		<!-- / container -->

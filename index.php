@@ -96,7 +96,7 @@ $query = mysqli_query($conn, $sql);
 						<h5><?= $isi->nm_categori; ?></h5>
 						<h4>Rp. <?= $isi->harga ?></h4>
 						<h6>Tersedia : <?= $isi->stok; ?></h6>
-						<a href="https://wa.me/6282340050589?text=Saya%20tertarik%20untuk%20membeli%20Produk%20<?= $isi->nm_jenisproduk; ?>%20<?= $isi->nm_categori; ?>%20Rp.%20 <?= $isi->harga ?>%20" class="btn-add">Pesan</a>
+						<a href="https://wa.me/628970836553?text=Saya%20tertarik%20untuk%20membeli%20Produk%20<?= $isi->nm_jenisproduk; ?>%20<?= $isi->nm_categori; ?>%20Rp.%20 <?= $isi->harga ?>%20" class="btn-add">Pesan</a>
 					</article>
                     <?php
                         }

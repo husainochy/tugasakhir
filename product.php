@@ -98,7 +98,7 @@ WHERE produk.id_categori = $id_categori ");
 						<h5><?= $row->nm_categori; ?></h5>
 						<h4>Rp. <?= $row->harga ?></h4>
 						<h6>Tersedia : <?= $row->stok; ?></h6>
-						<a href="https://wa.me/6282340050589?text=Saya%20tertarik%20untuk%20membeli%20Produk%20<?= $row->nm_jenisproduk; ?>%20<?= $row->nm_categori; ?>%20Rp.%20 <?= $row->harga ?>%20" class="btn-add">Pesan</a>
+						<a href="https://wa.me/628970836553?text=Saya%20tertarik%20untuk%20membeli%20Produk%20<?= $row->nm_jenisproduk; ?>%20<?= $row->nm_categori; ?>%20Rp.%20 <?= $row->harga ?>%20" class="btn-add">Pesan</a>
 						</article>
 						<?php
                         }

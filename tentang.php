@@ -88,33 +88,27 @@ $query = mysqli_query($conn, $sql);
 	<!-- / body -->
     <div id="slider" style="width: 100%; height: 100%;">
 		<ul>
-			<li style="background-image: url(images/TentangFitriMutiara2.jpg)">
-
-			</li>
-			<li class="purple" style="background-image: url(images/Ciri-Mutiara-Asli-3.jpg)">
-
-			</li>
-			<li class="yellow" style="background-image: url(images/beda-airlau&airtawar.jpg)">
-
-			</li>
+			<li style="background-image: url(images/TentangFitriMutiara2.jpg)"></li>
+			<li class="purple" style="background-image: url(images/Ciri-Mutiara-Asli-3.jpg)"class="img-fluid" style="width: 180px;"></li> 
+			<li class="yellow" style="background-image: url(images/beda-airlau&airtawar.jpg)"></li>
 		</ul>
 	</div>
 	<!-- / body -->
 
 	<footer id="footer">
-		<div class="container">
+	<div class="container">
 			<div class="cols">
-
-	
-					<h3>Contact us</h3>
-					<p>Fitri Mutiara Lombok<br>Kode Pos 83112, Jl. Tanggul Lingkungan Sukaraja Timur No.22, Central Ampenan, Ampenan, Mataram City, West Nusa Tenggara<br>Indonesia</p>
-					<p><span class="ico ico-em"></span><a href="#">pi2t_ris@yahoo.com</a></p>
-					<p><span class="ico ico-ph"></span>0812-3614-3339</p>
-		
-				
+				<h3>Contact us and SOCIAL MEDIA</h3>
+				<p>Fitri Mutiara Lombok<br>Kode Pos 83112, Jl. Tanggul Lingkungan Sukaraja Timur No.22, Central Ampenan, Ampenan, Mataram City, West Nusa Tenggara<br>Indonesia</p>
+				<p><span class="ico ico-em"></span><a href="#">fitri.mutiaralombok@gmail.com</a></p>
+				<p><span class="ico ico-ph"></span>0812-3614-3339</p>
+				<p><a href="https://www.facebook.com/fitri.g.mutiara"><span class=""></span>Facebook Fitri Mutiara Lombok</a></p>
+				<p><a href="https://www.instagram.com/fitri_mutiaralombok"><span class=""></span>Instagram Fitri Mutiara Lombok</a></p>	
+				<p><a href="https://vt.tiktok.com/ZGJUVDLSN/"><span class=""></span>Tiktok Fitri Mutiara Lombok</a></p>
+				<p><a href="https://shopee.co.id/fitri_ummufarih?smtt=0.0.9"><span class=""></span>Shopee Fitri Mutiara Lombok</a></p>			
 			</div>
-			<p class="copy">Copyright 2021 Jong Koding. All rights reserved.</p>
-		</div>
+			<p class="copy">Copyright Husain Jong Koding 2021</p>
+	</div>
 		<!-- / container -->
 	</footer>
 	<!-- / footer -->

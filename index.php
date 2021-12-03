@@ -28,7 +28,7 @@ $query = mysqli_query($conn, $sql);
 
 	<header id="header">
 		<div class="container">
-			<a href="index.php" id="logo" title="Diana’s jewelry">Fitri Mutiara Lombok</a>
+			<a href="index.php" id="logo" title="Fitri Mutiara Lombok">Fitri Mutiara Lombok</a>
 			<div class="right-links">
 				<ul>
 					<li><a href="login.php"><span class="ico-account"></span>Login</a></li>
@@ -79,19 +79,29 @@ $query = mysqli_query($conn, $sql);
 				<li><a href="contact.php">Kontak</a></li>
 			</ul>
 		</div>
-		<!-- / container -->
+		<!-- / navigation -->
+
+	<div id="breadcrumbs">
+		<div class="container">
+			<ul>
+			<li><a href="index.php">Home</a></li>
+				<li><a href="https://shopee.co.id/fitri_ummufarih?smtt=0.0.9">Kelik Pembilian di Shopee Fitri Mutiara Lombok</a></li>
+			</ul>
+		</div>
 	</nav>
+		<!-- / container -->
+	
 
 	<div id="body">
 		<div class="container">
 			<div class="last-products">
-				<h2>Produk Fitri Mutiara Lombok</h2>
+				<h1>Produk Fitri Mutiara Lombok</h1>
 				<section class="products">
                     <?php 
                         while ($isi = mysqli_fetch_object($query)) {
                             ?>
 					<article>
-                        <img src="<?= "file/". $isi->poto ?>" class="img-fluid" style="width: 100px;"/> 
+                        <img src="<?= "file/". $isi->poto ?>" class="img-fluid" style="width: 180px;"/> 
 						<h3><?= $isi->nm_jenisproduk; ?></h3>
 						<h5><?= $isi->nm_categori; ?></h5>
 						<h4>Rp. <?= $isi->harga ?></h4>
@@ -108,6 +118,7 @@ $query = mysqli_query($conn, $sql);
 		<!-- / container -->
 	</div>
 	<!-- / navigation -->
+
 
 	<!-- / body -->
 
@@ -126,7 +137,7 @@ $query = mysqli_query($conn, $sql);
 				<p><a href="https://shopee.co.id/fitri_ummufarih?smtt=0.0.9"><span class=""></span>Shopee Fitri Mutiara Lombok</a></p>			
 			</div>
 			<p class="copy">Copyright Husain Jong Koding 2021</p>
-		</div>
+	</div>
 		<!-- / container -->
 	</footer>
 	<!-- / footer -->

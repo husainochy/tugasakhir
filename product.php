@@ -79,8 +79,8 @@ WHERE produk.id_categori = $id_categori ");
 	<div id="breadcrumbs">
 		<div class="container">
 			<ul>
-				<li><a href="#">Home</a></li>
-				<li>Product results</li>
+				<li><a href="index.php">Home</a></li>
+				<li><a href="https://shopee.co.id/fitri_ummufarih?smtt=0.0.9">Kelik Pembilian di Shopee Fitri Mutiara Lombok</a></li>
 			</ul>
 		</div>
 		<!-- / container -->
@@ -93,7 +93,7 @@ WHERE produk.id_categori = $id_categori ");
                         while ($row = mysqli_fetch_object($query)) {
                             ?>
 						<article>
-						<img src="<?= "file/". $row->poto ?>" class="img-fluid" style="width: 100px;"/> 
+						<img src="<?= "file/". $row->poto ?>" class="img-fluid" style="width: 180px;"/> 
 						<h3><?= $row->nm_jenisproduk; ?></h3>
 						<h5><?= $row->nm_categori; ?></h5>
 						<h4>Rp. <?= $row->harga ?></h4>

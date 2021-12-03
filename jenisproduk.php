@@ -9,7 +9,7 @@ WHERE produk.id_jenisproduk = $id ");
 <!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<title>Mutiara Lombok</title>
+	<title>Fitri Mutiara Lombok</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" media="all" href="css/style.css">
@@ -79,35 +79,22 @@ WHERE produk.id_jenisproduk = $id ");
 	<div id="breadcrumbs">
 		<div class="container">
 			<ul>
-				<li><a href="#">Home</a></li>
-				<li>Product results</li>
+				<li><a href="index.php">Home</a></li>
+				<li><a href="https://shopee.co.id/fitri_ummufarih?smtt=0.0.9">Kelik Pembilian di Shopee Fitri Mutiara Lombok</a></li>
 			</ul>
 		</div>
 		<!-- / container -->
 	</div>
 	<!-- / body -->
 
-	<div id="body">
-		<div class="container">
-			<div class="pagination">
-				<ul>
-					<li><a href="#"><span class="ico-prev"></span></a></li>
-					<li><a href="#">1</a></li>
-					<li class="active"><a href="#">2</a></li>
-					<li><a href="#">3</a></li>
-					<li><a href="#">4</a></li>
-					<li><a href="#">5</a></li>
-					<li><a href="#"><span class="ico-next"></span></a></li>
-				</ul>
-			</div>
+
 				<div id="content">
 					<section class="products">
-						
 						<?php 
                         while ($row = mysqli_fetch_object($query)) {
                             ?>
 						<article>
-						<img src="<?= "file/". $row->poto ?>" class="img-fluid" style="width: 100px;"/> 
+						<img src="<?= "file/". $row->poto ?>" class="img-fluid" style="width: 180px;"/> 
 						<h3><?= $row->nm_jenisproduk; ?></h3>
 						<h5><?= $row->nm_categori; ?></h5>
 						<h4>Rp. <?= $row->harga ?></h4>
@@ -120,8 +107,9 @@ WHERE produk.id_jenisproduk = $id ");
 					</section>
 				</div>
 				<!-- / content -->
-			
-		</div>
+			</div>
+		
+		</div>		
 		<!-- / container -->
 	</div>
 	<!-- / body -->
@@ -140,6 +128,7 @@ WHERE produk.id_jenisproduk = $id ");
 			</div>
 			<p class="copy">Copyright Husain Jong Koding 2021</p>
 	</div>
+	
 		<!-- / container -->
 	</footer>
 	<!-- / footer -->

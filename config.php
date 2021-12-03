@@ -1,9 +1,9 @@
 <?php 
  
-$server = "jongkreatif.com";
-$user = "u5250287_fitrimutiaralombok";
-$pass = "fitrimutiaralombok1234";
-$database = "u5250287_fitrimutiaralombok";
+$server = "localhost";
+$user = "root";
+$pass = "";
+$database = "mutiara_lombok";
  
 $conn = mysqli_connect($server, $user, $pass, $database);
  
